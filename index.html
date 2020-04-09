@@ -5,17 +5,51 @@
 <meta name="viewport" content="width=device-width">
 <title>Welcome</title>
 
-<link rel="stylesheet" type="text/css" href="css/Newstyle.css"></head>
+<link rel="stylesheet" type="text/css" href="css/newStyle.css"></head>
 <link rel="stylesheet" type="text/css" href="css/icons.css"></head>
+<link rel="stylesheet" type="text/css" href="css/createForms.css"></head>
 
-<body class="contWelcome">
+<body>
 
     <header class="site-header">
        
-      <div class="header-logo">
-            <a href="#">
-                <img src="img/logo.png" alt="eduac">
+            <div class="header-Left">
+                
+                 <div>
+	                    <button id="show-hide-sidebar-toggle" class="show-hide-sidebar" title="Esconde/muestra menu izquierdo">
+	                        <span class="icon-menu"></span>
+	                    </button>
+	                    <button class="hamburger hamburger--htla">
+	                        <span>toggle menu</span>
+	                    </button>
+	                </div>
+	                <div class="header-search">
+	                    <button type="button" class="icon-glass" data-toggle="modal" data-target="#searchModal">
+	                    </button>
+	                </div>
+            </div>
+       
+        <div class="header-logo">
+            <a href="/eduac/" class="site-logo">
+                <img src="/eduac/img/logo.png" alt="eduac">
             </a>
+        </div>
+        
+        <div class="header-right">
+                
+                    <div class="dropdown dropdown-notification messages">
+                        <a href="#" class="dropdown-toggle small" id="dd-messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ingresar  </a>
+                        
+                     </div>
+                
+            <div class="dropdown dropdown-lang">
+                <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Seleccione el idioma">
+                    <span class="es" "="">
+                    </span>
+                </button>
+                
+            </div>
+            
         </div>
         <!--.site-header-shown-->
     </header>
